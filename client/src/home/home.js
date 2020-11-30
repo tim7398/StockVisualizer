@@ -9,7 +9,7 @@ function Home() {
   return (
     <Container fluid>
       Stock Visualizer
-      <Row ><Col md={{ span: 4, offset: 7 }}><Button>Add Stock</Button></Col></Row>
+      <Row ><Col md={{ span: 4, offset: 7 }}><Button>Add Porfolio</Button></Col></Row>
       <Row className="justify-content-md-center" xs={2} md={4} lg={6}>
           <StockCard/>
       </Row>
