@@ -12,7 +12,7 @@ function Home() {
       Stock Visualizer
       <Row>
         <Col md={{ span: 4, offset: 7 }}>
-          <FontAwesomeIcon icon="plus-circle">Hello</FontAwesomeIcon>
+          <FontAwesomeIcon icon="plus-circle" size="4x"></FontAwesomeIcon>
         </Col>
       </Row>
       <Row className="justify-content-md-center" xs={2} md={4} lg={6}>
