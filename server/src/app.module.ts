@@ -2,9 +2,15 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { StockModule } from './components/stocks/stocks.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [StockModule],
+  imports: [
+    StockModule,
+    ConfigModule.forRoot({
+      envFilePath: '.development.env',
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
