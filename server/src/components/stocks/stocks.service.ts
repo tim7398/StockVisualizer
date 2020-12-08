@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { AlphaVantageService } from '../../services/alphaVantage/alphaVantage.service';
 import { DatabaseService } from '../../services/database/database.service';
-import { Portfolio, TABLE_NAMES } from '../../models/database';
 
 @Injectable()
 export class StockService {
@@ -12,7 +11,7 @@ export class StockService {
 
   async getStocks(name: string): Promise<any> {
     // Commented out the database code. This is an example of how to use it.
-    // const portfolioItem = new Portfolio([
+    // const portfolioItem = new PortfolioRequest([
     //   'IBM',
     //   'PLTR',
     //   'DKNG',
@@ -24,7 +23,7 @@ export class StockService {
     // const res = await this.databaseService.postItem(
     //   TABLE_NAMES.PORTFOLIO,
     //   portfolioItem,
-    // ); 
+    // );
 
     return quote;
   }

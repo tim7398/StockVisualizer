@@ -1,11 +1,11 @@
-import { v4 as uuidv4 } from 'uuid';
-
-export class Portfolio {
+export class PortfolioResponse {
   id: string;
   stocks: string[];
+  name: string;
+  totalATGains?: number;
+  totalATLosses?: number;
 
   constructor(stocks: string[]) {
-    this.id = uuidv4();
     this.stocks = stocks;
   }
 }
