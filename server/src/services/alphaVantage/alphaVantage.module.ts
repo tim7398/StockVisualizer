@@ -1,5 +1,5 @@
 import { HttpModule, Module } from '@nestjs/common';
-import { AlphaVantageService } from '../../services/alphaVantage/alphaVantage.service';
+import { AlphaVantageService } from './alphaVantage.service';
 
 @Module({
   imports: [HttpModule],
