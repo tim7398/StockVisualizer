@@ -1,11 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 
-// import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
-// var ReactBsTable = require('react-bootstrap-table');
-// var BootstrapTable = ReactBsTable.BootstrapTable;
-// var TableHeaderColumn = ReactBsTable.TableHeaderColumn;
-
 function Portfolio() {
   return (
     <Table striped bordered hover>
