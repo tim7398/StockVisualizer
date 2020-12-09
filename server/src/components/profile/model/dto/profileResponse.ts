@@ -1,1 +1,3 @@
-export class ProfileResponse {}
+export class ProfileResponse {
+    
+}
