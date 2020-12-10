@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import * as AWS from 'aws-sdk';
 import { PortfolioRequest } from './model';
+import { StocksRequest } from './model/stocksRequest';
 
 @Injectable()
 export class DatabaseService {
@@ -27,11 +28,12 @@ export class DatabaseService {
   }
 
   //item can be typed to be portfolio or profile
-  async postItem(tableName: string, item: PortfolioRequest) {
+  async postItem(tableName: string, item: PortfolioRequest | StocksRequest) {
     try {
       const params = {
         TableName: tableName,
         Item: item,
+        ReturnValues:"ALL_OLD"
       };
 
       return this.dynamoDB.put(params).promise();
